@@ -1,0 +1,179 @@
+/* start global style */
+
+:root{
+    --main-color:#0078FF;
+    --white-color:white;
+    --body-color:#F5F5F5;
+    --background-ffff:#fff;
+    --padding-top: 50px;
+    --p-color:rgb(78, 78, 78);
+    --span-color:rgb(30, 30, 30);
+    --progress-color: #0d6dfd3e;
+    --bg-footer:#0062D3;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--body-color);
+}
+html , body {
+    scroll-behavior: smooth;
+}
+
+/* end global style */
+
+/* start header */
+.blog-page-sec-one{
+    height: 50vh;
+    background-image: linear-gradient(#0077ffb1,#0077ffb1) ,url(../imgs/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-block:80px 50px;
+}
+.blog-page-sec-one-content{
+    height: 50vh;
+}
+.blog-page-sec-one-content h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--white-color);
+}
+.blog-page-sec-one-content p , .blog-page-sec-one-content p a{
+    font-size: 1rem;
+    color: var(--white-color);
+}
+.blog-page-sec-one-content p:last-child{
+    font-size: 1rem;
+    color: #cde1f8;
+}
+/* end header  */
+
+/* start section two */
+
+/* start img card  */
+.card-text h2{
+    font-size: 24px;
+    color: var(--span-color);
+}
+.my-info{
+    position: relative;
+}
+.my-info::before{
+    position: absolute;
+    content: "";
+    top: 5%;
+    left: 0;
+    height: 50%;
+    background-color: var(--main-color);
+    width: .25rem;
+}
+.my-info p span{
+color: var(--span-color);
+}
+.my-info p a{
+    color: var(--main-color);
+}
+.card-text > p{
+    color: var(--p-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.card-text > h4{
+    color: var(--p-color);
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    position: relative;
+}
+.card-text > h4::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    width: .25rem;
+}
+.my-info{
+    width: 75%;
+}
+@media screen and (min-width: 992px) {
+    .my-info{
+        width: 50%;
+    }
+}
+/* end img card  */
+
+/* start comment section */
+.comment-img-text h3{
+    color: var(--span-color);
+    font-size: 1.3125rem;
+    font-weight: 500;
+}
+.comment-img-text h5{
+    color: var(--span-color);
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.comment-img-text p{
+    color: var(--p-color);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.comment-img-text a{
+    color: var(--main-color);
+}
+
+/* end comment section */
+
+
+/* start search section */
+.head-of-each-sec{
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: var(--span-color);
+    
+}
+.head-of-each-sec::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    width: .3125rem;
+}
+
+/* end search section */
+
+/* start Recent section  */
+.Recent-content p::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 55%;
+    height: 2px;
+    background-color: var(--main-color);
+    width: .625rem;
+}
+.Recent-content p a{
+    color: var(--span-color);
+    transition: 1s ease color;
+}
+.Recent-content p a:hover{
+    color: var(--main-color);
+}
+/* end Recent section  */
+
+/* start Archives section */
+.tags-content span{
+    cursor: pointer;
+}
+
+/* end Archives section */
+
+
+
+/* end section two */
